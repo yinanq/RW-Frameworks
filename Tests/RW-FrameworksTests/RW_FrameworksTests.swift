@@ -12,9 +12,15 @@ final class RW_FrameworksTests: XCTestCase {
         let color = RW_Frameworks.colorFromHexString("006736")
         XCTAssertEqual(color, RW_Frameworks.rwfColor)
     }
+    
+    func testSecondaryRWFColorsAreEqual() {
+        let color = RW_Frameworks.colorFromHexString("147147")
+        XCTAssertEqual(color, RW_Frameworks.secondaryRWFColor)
+    }
 
     static var allTests = [
         ("testColorRedEqual", testColorRedEqual),
-        ("testRWFColorsAreEqual", testRWFColorsAreEqual)
+        ("testRWFColorsAreEqual", testRWFColorsAreEqual),
+        ("testSecondaryRWFColorsAreEqual", testSecondaryRWFColorsAreEqual)
     ]
 }

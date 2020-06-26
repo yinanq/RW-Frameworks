@@ -28,4 +28,9 @@ public class RW_Frameworks {
         return self.colorFromHexString("006736")
     }
     
+    /// return UIColor of color #147147
+    public static var secondaryRWFColor: UIColor {
+        return self.colorFromHexString("147147")
+    }
+    
 }
